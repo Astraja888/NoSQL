@@ -1,0 +1,226 @@
+use Klientai
+db.createCollection("Klientai") 
+db.Klientai.insert(
+[
+	{
+		"Kliento_id" : "11711",
+		"Sunkumotipas_id" : "1",
+		"Susitikimo_rez" : "Informuota",
+		"Paslaugos_id" : "Socialinė",
+		"Specialistai" : "TBKS specialistai",
+		"Kas_kreipesi" : "Policija",
+		"AV_seimai" : "Netaikoma",
+		"VGK" : "Nesvarstyta",
+		"Sudetingumas" : "MIN intervencija"
+	},
+	{
+		"Kliento_id" : "11412",
+		"Sunkumotipas_id" : "1",
+		"Susitikimo_rez" : "Informuota",
+		"Paslaugos_id" : "Socialinė",
+		"Specialistai" : "TBKS specialistai",
+		"Kas_kreipesi" : "Policija",
+		"AV_seimai" : "Netaikoma",
+		"VGK" : "Nesvarstyta",
+		"Sudetingumas" : "MIN intervencija"
+	},
+	{
+		"Kliento_id" : "11313",
+		"Sunkumotipas_id" : "1",
+		"Susitikimo_rez" : "Informuota",
+		"Paslaugos_id" : "Socialinė",
+		"Specialistai" : "TBKS specialistai",
+		"Kas_kreipesi" : "Policija",
+		"AV_seimai" : "Netaikoma",
+		"VGK" : "Nesvarstyta",
+		"Sudetingumas" : "MIN intervencija"
+	},
+	{
+		"Kliento_id" : "11614",
+		"Sunkumotipas_id" : "1",
+		"Susitikimo_rez" : "Informuota",
+		"Paslaugos_id" : "Socialinė",
+		"Specialistai" : "TBKS specialistai",
+		"Kas_kreipesi" : "Policija",
+		"AV_seimai" : "Netaikoma",
+		"VGK" : "Nesvarstyta",
+		"Sudetingumas" : "MIN intervencija"
+	},
+	{
+		"Kliento_id" : "1615",
+		"Sunkumotipas_id" : "1",
+		"Susitikimo_rez" : "Informuota",
+		"Paslaugos_id" : "Socialinė",
+		"Specialistai" : "TBKS specialistai",
+		"Kas_kreipesi" : "Policija",
+		"AV_seimai" : "Netaikoma",
+		"VGK" : "Nesvarstyta",
+		"Sudetingumas" : "MIN intervencija"
+	},
+	{
+		"Kliento_id" : "11616",
+		"Sunkumotipas_id" : "1",
+		"Susitikimo_rez" : "Informuota",
+		"Paslaugos_id" : "Socialinė",
+		"Specialistai" : "TBKS specialistai",
+		"Kas_kreipesi" : "Policija",
+		"AV_seimai" : "Taikoma",
+		"VGK" : "Nesvarstyta",
+		"Sudetingumas" : "MIN intervencija"
+	},
+	{
+		"Kliento_id" : "11617",
+		"Sunkumotipas_id" : "1",
+		"Susitikimo_rez" : "Informuota",
+		"Paslaugos_id" : "Socialinė",
+		"Specialistai" : "TBKS specialistai",
+		"Kas_kreipesi" : "Policija",
+		"AV_seimai" : "Taikoma",
+		"VGK" : "Nesvarstyta",
+		"Sudetingumas" : "MIN intervencija"
+	},
+	{
+		"Kliento_id" : "21718",
+		"Sunkumotipas_id" : "2",
+		"Susitikimo_rez" : "Socializacija",
+		"Paslaugos_id" : "Kompleks",
+		"Specialistai" : "Psichologas, soc.pedagogas, gydytojai",
+		"Kas_kreipesi" : "Teismas",
+		"AV_seimai" : "Taikoma",
+		"VGK" : "Svarstyta",
+		"Sudetingumas" : "MAX intervencija"
+	},
+	{
+		"Kliento_id" : "21719",
+		"Sunkumotipas_id" : "2",
+		"Susitikimo_rez" : "Socializacija",
+		"Paslaugos_id" : "Kompleks",
+		"Specialistai" : "Psichologas, soc.pedagogas, gydytojai",
+		"Kas_kreipesi" : "Globos centras",
+		"AV_seimai" : "Netaikoma",
+		"VGK" : "Svarstyta",
+		"Sudetingumas" : "MAX intervencija"
+	},
+	{
+		"Kliento_id" : "21620",
+		"Sunkumotipas_id" : "2",
+		"Susitikimo_rez" : "Socializacija",
+		"Paslaugos_id" : "Kompleks",
+		"Specialistai" : "Psichologas, soc.pedagogas, gydytojai",
+		"Kas_kreipesi" : "Tėvai",
+		"AV_seimai" : "Taikoma",
+		"VGK" : "Svarstyta",
+		"Sudetingumas" : "MAX intervencija"
+	},
+	{
+		"Kliento_id" : "21621",
+		"Sunkumotipas_id" : "2",
+		"Susitikimo_rez" : "Socializacija",
+		"Paslaugos_id" : "Kompleks",
+		"Specialistai" : "Psichologas, soc.pedagogas, gydytojai",
+		"Kas_kreipesi" : "Teismas",
+		"AV_seimai" : "Taikoma",
+		"VGK" : "Svarstyta",
+		"Sudetingumas" : "MAX intervencija"
+	},
+	{
+		"Kliento_id" : "21722",
+		"Sunkumotipas_id" : "2",
+		"Susitikimo_rez" : "Socializacija",
+		"Paslaugos_id" : "Kompleks",
+		"Specialistai" : "Psichologas, psichoterapeutas, mokytojai, soc.pedagogas, gydytojai",
+		"Kas_kreipesi" : "TBKS",
+		"AV_seimai" : "Netaikoma",
+		"VGK" : "Svarstyta",
+		"Sudetingumas" : "MAX intervencija"
+	},
+	{
+		"Kliento_id" : "21623",
+		"Sunkumotipas_id" : "2",
+		"Susitikimo_rez" : "Socializacija",
+		"Paslaugos_id" : "Kompleks",
+		"Specialistai" : "Psichologas, soc.pedagogas, gydytojai",
+		"Kas_kreipesi" : "TBKS",
+		"AV_seimai" : "Taikoma",
+		"VGK" : "Svarstyta",
+		"Sudetingumas" : "MAX intervencija"
+	},
+	{
+		"Kliento_id" : "41624",
+		"Sunkumotipas_id" : "4",
+		"Susitikimo_rez" : "Suderinta intervencija",
+		"Paslaugos_id" : "Kompleks",
+		"Specialistai" : "Psichiatras, socialinis pedagogas, psichologas",
+		"Kas_kreipesi" : "Atvejo vadyba",
+		"AV_seimai" : "Taikoma",
+		"VGK" : "Svarstyta",
+		"Sudetingumas" : "MID intervencija"
+	},
+	{
+		"Kliento_id" : "41525",
+		"Sunkumotipas_id" : "4",
+		"Susitikimo_rez" : "Suderinta intervencija",
+		"Paslaugos_id" : "Kompleks",
+		"Specialistai" : "Psichiatras, socialinis pedagogas, psichologas",
+		"Kas_kreipesi" : "Tėvai",
+		"AV_seimai" : "Netaikoma",
+		"VGK" : "Svarstyta",
+		"Sudetingumas" : "MID intervencija"
+	},
+	{
+		"Kliento_id" : "31526",
+		"Sunkumotipas_id" : "3",
+		"Susitikimo_rez" : "Suderinta intervencija",
+		"Paslaugos_id" : "Kompleks",
+		"Specialistai" : "Psichiatras, socialinis pedagogas, psichologas",
+		"Kas_kreipesi" : "Mokykla",
+		"AV_seimai" : "Netaikoma",
+		"VGK" : "Svarstyta",
+		"Sudetingumas" : "MID intervencija"
+	},
+	{
+		"Kliento_id" : "51527",
+		"Sunkumotipas_id" : "5",
+		"Susitikimo_rez" : "Suderinta intervencija",
+		"Paslaugos_id" : "Sveikatos",
+		"Specialistai" : "Gydytojai",
+		"Kas_kreipesi" : "Mokykla",
+		"AV_seimai" : "Netaikoma",
+		"VGK" : "Nesvarstyta",
+		"Sudetingumas" : "MIN intervencija"
+	},
+	{
+		"Kliento_id" : "6928",
+		"Sunkumotipas_id" : "6",
+		"Susitikimo_rez" : "Trumpalaikė tikslinė intervencija",
+		"Paslaugos_id" : "Sveikatos",
+		"Specialistai" : "Gydytojai",
+		"Kas_kreipesi" : "Tėvai",
+		"AV_seimai" : "Netaikoma",
+		"VGK" : "Nesvarstyta",
+		"Sudetingumas" : "MIN intervencija"
+	},
+	{
+		"Kliento_id" : "61629",
+		"Sunkumotipas_id" : "6",
+		"Susitikimo_rez" : "Trumpalaikė tikslinė intervencija",
+		"Paslaugos_id" : "Švietimo",
+		"Specialistai" : "Socialinis pedagogas, įvertinimas PPT",
+		"Kas_kreipesi" : "Mokykla",
+		"AV_seimai" : "Netaikoma",
+		"VGK" : "Nesvarstyta",
+		"Sudetingumas" : "MIN intervencija"
+	},
+	{
+		"Kliento_id" : "61530",
+		"Sunkumotipas_id" : "6",
+		"Susitikimo_rez" : "Trumpalaikė tikslinė intervencija",
+		"Paslaugos_id" : "Socialinės",
+		"Specialistai" : "Socialinis darbuotojas",
+		"Kas_kreipesi" : "Mokykla",
+		"AV_seimai" : "Netaikoma",
+		"VGK" : "Nesvarstyta",
+		"Sudetingumas" : "MIN intervencija"
+	}
+]
+)

@@ -1,2 +1,2 @@
-# NoSQL-demo
-Uzduotys
+# Namu-darbas
+Nosql

@@ -1,0 +1,17 @@
+
+# 18 klausimas: panaudojant funkciją match 1 - suskaičiuoti, kiek duomenų yra atitinkančių sąlygą: Years yra daugiau nei 2010; 2 - atitinkančių sąlygą - metai yra arba 2010 arba 2021.
+
+db.Games_console.aggregate([{$match: {"Year": {$gt: 2010}}}])
+db.Games_console.aggregate([{$match: {$or: [{"Year": "2010"}, {"Year": "2021"}]}}])
+ 
+
+# 19 klausimas: panaudojant funkciją group, grupavimas _id atliekamas pagal EU_Sales pardavimus nurodant vidurkį:
+db.Games_console.aggregate({$group: {_id: '$EU_Sales', total: {$sum: 1}}})
+
+# 20 klausimas - naudojant funkciją sort, išrikiuojami US_Sales, EU_Sales, JP_Sales, Other_Sales duomenys (vertė nelygi 0) mažėjimo tvarka
+ db.Games_console.find({$and: [{US_Sales: {$ne: 0}}, {EU_Sales: {$ne: 0}}, {JP_Sales: {$ne: 0}}, {Other_Sales: {$ne: 0}}]}).sort({US_Sales: -1, EU_Sales: -1, JP_Sales: -1, Other_Sales: -1})
+ 
+# 21 klausimas - susumuoti visus duomenis, kuriuose leidėjas (Publisher} yra Nintendo
+ db.Games_console.aggregate({$match: {Publisher: "Nintendo"}})
+ 
+  db.Games_console.find({$match: {Year: {{$lt: 2011}}, {$aggregate: {"Year": 2006}}) - matau, kad dar kažko užklausoje trūksta, ieškau įrašų, atitinkančių sąlygą kad yra išleisti anksčiau nei 2010 m., prašau suskaičiuoti, kiek yra 2006 metais tokių įrašų
